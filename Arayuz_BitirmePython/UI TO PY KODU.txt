@@ -1,0 +1,2 @@
+cd C:\ProgramData\miniforge3\Lib\site-packages\QtDesigner
+pyuic5 -x bitirmeArayuz.ui -o bitirmeArayuz.py
