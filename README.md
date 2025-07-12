@@ -9,7 +9,7 @@
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Provide a brief overview of the project, its purpose, and what problem it aims to solve.
+This Project focuses on developing autonomous vehicle prototype capable of running with Turkish voice commands. Raspberry pi 4 is used for operation. The vehicle acquires voice commands through microphone, these commands are converted to text commands through Google cloud. Text commands are sent to Open AI API for jason formatting for our system. Movement commands are executed using DC motors, motor controllers and gyroscope.
 
 ## Features
 List the key features and functionalities of the project.
