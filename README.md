@@ -18,7 +18,7 @@ List the key features and functionalities of the project.
 - Applications 
 - Services 
 
-##Hardware
+## Hardware
 -Raspberry Pi 4
 -MPU6050 Gyroscope Accelerometer
 -SG90 RC Mini (9gr) Servo Motor
