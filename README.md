@@ -18,6 +18,14 @@ List the key features and functionalities of the project.
 - Applications 
 - Services 
 
+##Hardware
+-Raspberry Pi 4
+-MPU6050 Gyroscope Accelerometer
+-SG90 RC Mini (9gr) Servo Motor
+-L298N Motor Driver
+-DC Motor
+-Power Supply
+
 ## Installation
 Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
 
