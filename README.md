@@ -78,7 +78,7 @@ Screenshots of the computer application are attached below.
 A mobile application has also been designed. Screenshots of the mobile application are included below.
 
 ![Mobil Uygulama -1](image-2.png)
-![Mobil Uygulama -2](image-3.png)
+![Mobil Uygulama -2](image-6.png)
 ![Mobil Uygulama -3](image-4.png)
 ![Mobil Uygulama -4](image-5.png)
 
