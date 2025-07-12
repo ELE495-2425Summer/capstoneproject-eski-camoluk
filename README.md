@@ -44,6 +44,8 @@ cd project-name
 ## Usage
 Provide instructions and examples on how to use the project. Include code snippets or screenshots where applicable.
 
+
+
 ## Screenshots
 Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here.
 
@@ -60,6 +62,13 @@ Aynı zamanda bir mobil uygulama tasarımı da yapılmıştır. Aşağıda mobil
 ![Mobil Uygulama -4](image-5.png)
 ## Acknowledgements
 Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
+
+Hazırlayanlar:
+Yağız Zengin
+Efe Haylaz
+Yılmaz Duman
+Alperen Çağrı Barış
+Fatih Kerem Mazlum
 
 [Contributor 1](https://github.com/user1)
 [Resource or Tool](https://www.nvidia.com)
