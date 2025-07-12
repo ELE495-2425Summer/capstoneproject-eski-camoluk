@@ -9,14 +9,16 @@
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-This Project focuses on developing autonomous vehicle prototype capable of running with Turkish voice commands. Raspberry pi 4 is used for operation. The vehicle acquires voice commands through microphone, these commands are converted to text commands through Google cloud. Text commands are sent to Open AI API for jason formatting for our system. Movement commands are executed using DC motors, motor controllers and gyroscope.
+Türkçe doğal dil ile verilen sesli komutları algılayarak bu komutları temel hareket talimatlarına dönüştürüp uygulayabilen tekerlekli, otonom bir mini araç tasarlanmıştır. Sistem, sesli komutları önce yazıya çevirir, ardından bir dil modeli kullanarak bu metni analiz eder ve temel hareket komutlarına dönüştürür. Araç, sensörler ve motor kontrol birimleri aracılığıyla bu komutları otonom şekilde gerçekleştirir. Kullanıcıya Türkçe olarak sesli geri bildirim verir. Proje kapsamında mikrodenetleyici/mikrobilgisayar tabanlı bir gömülü sistem tasarımı yapılmıştır. Konuşma tanıma, doğal dil işleme, hareket kontrolü gibi özellikler eklenmiştir. Aracın mevcut durumu kullanıcı arayüzü aracılığıyla bildirilmektedir. Kullanıcı arayüzü aynı zamanda aracın algıladığı sesleri, görev geçmişini ve hareket komutlarını içermektedir. Arayüz üzerinden belirli kullanıcıların seslerinin algılanabilmesi için kullanıcı kimliklendirmesi bölümü eklenmiştir. Kullanıcı kimliklendirme açılıp kapatılabilir ve kimlerin seslerinin algılanacağı seçilebilir. Ayrıca aracın bu arayüz aracılığıyla başlatılabilmesi sağlanmıştır. 
 
 ## Features
 List the key features and functionalities of the project.
 - Hardware: The hardware components used (should be listed with links)
 - Operating System and packages
 - Applications 
-- Services 
+- Services
+
+
 
 ## Hardware
 - Raspberry Pi 4
@@ -25,6 +27,25 @@ List the key features and functionalities of the project.
 - L298N Motor Driver
 - DC Motor
 - Power Supply
+
+## Operating System and Packages
+Bilgisayar uygulaması Windows işletim sistemi için tasarlanmıştır.
+
+Mobil uygulama ise Android işletim sistemine sahip telefonlar için tasarlanmıştır.
+
+Gereklilikler "Installation" bölümünde anlatılmıştır.
+
+## Aplications
+Bilgisayar uygulaması ve mobil uygulama tasarlanmıştır. Bilgisayar uygulaması aracılığıyla aracın başlatılabilmesi sağlanmıştır.
+
+## Services
+Uygulamada ve Raspberry Pi'ın içerisindeki kodda bir takım servis sağlayıcılarından faydalanılmıştır.
+
+1- Eleven Labs
+2- OpenAI
+3- Google Cloud
+4- Mongo DB
+5- Porcupine
 
 ## Installation
 Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
@@ -44,6 +65,11 @@ cd project-name
 ## Usage
 Provide instructions and examples on how to use the project. Include code snippets or screenshots where applicable.
 
+Aracı çalıştırmak için öncelikle arayüz üzerinden "Başlat" butonuna basılmalıdır. Ardından arayüz sizi bilgilendirdiğinde "Hey Pi Car" denmelidir. Bu cümle algılandığında araç kullanıcıyı dinlemeye başlayacaktır. Kullanıcı araçtan yapmasını beklediği komutları bu noktada söylemelidir.
+
+Örneğin "5 metre ileri git" gibi bir komut verildiğinde. Bu komut bir JSON dosyasında gerekli değişkenlere uygun değerler verilerek oluşturulur. Program JSON'dan aldığı verilerle bilgisayar komutlarını fiziksel hareketlere çevirir ve araç hareket etmeye başlar.
+
+Örneğin "Pizza sipariş et" gibi gerçekleştiremeyeceği bir komut verildiğinde ise araç, kullancının istediği komutu yerine getiremeyeceğini söyler ve kullanıcıdan yeni bir komut vermesini bekler.
 
 
 ## Screenshots
