@@ -54,6 +54,10 @@ Similarly, the uncompiled application can be run from the "Arayuz_BitirmeProje" 
 # Example download command
 git clone https://github.com/ELE495-2425Summer/capstoneproject-eski-camoluk.git
 cd Arayuz_BitirmePython
+
+# Uygulamanın .exe dosyasına dönüşmesi için pyinstaller kullanılmalıdır.
+pip install pyinstaller
+pyinstaller --onefile --noconsole Uygulama_V1.py
 ```
 
 
