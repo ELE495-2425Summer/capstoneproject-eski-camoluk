@@ -2,22 +2,17 @@
 
 # Table of Contents
 - [Introduction](#introduction)
-- [Features](#features)
+- [Hardware](#hardware)
+- [Operating System and Packages](#operating-system-and-packages)
+- [Applications](#applications)
+- [Services](#services)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Türkçe doğal dil ile verilen sesli komutları algılayarak bu komutları temel hareket talimatlarına dönüştürüp uygulayabilen tekerlekli, otonom bir mini araç tasarlanmıştır. Sistem, sesli komutları önce yazıya çevirir, ardından bir dil modeli kullanarak bu metni analiz eder ve temel hareket komutlarına dönüştürür. Araç, sensörler ve motor kontrol birimleri aracılığıyla bu komutları otonom şekilde gerçekleştirir. Kullanıcıya Türkçe olarak sesli geri bildirim verir. Proje kapsamında mikrodenetleyici/mikrobilgisayar tabanlı bir gömülü sistem tasarımı yapılmıştır. Konuşma tanıma, doğal dil işleme, hareket kontrolü gibi özellikler eklenmiştir. Aracın mevcut durumu kullanıcı arayüzü aracılığıyla bildirilmektedir. Kullanıcı arayüzü aynı zamanda aracın algıladığı sesleri, görev geçmişini ve hareket komutlarını içermektedir. Arayüz üzerinden belirli kullanıcıların seslerinin algılanabilmesi için kullanıcı kimliklendirmesi bölümü eklenmiştir. Kullanıcı kimliklendirme açılıp kapatılabilir ve kimlerin seslerinin algılanacağı seçilebilir. Ayrıca aracın bu arayüz aracılığıyla başlatılabilmesi sağlanmıştır. 
-
-## Features
-List the key features and functionalities of the project.
-- Hardware: The hardware components used (should be listed with links)
-- Operating System and packages
-- Applications 
-- Services
-
+This Project focuses on developing autonomous vehicle prototype capable of running with Turkish voice commands. Raspberry pi 4 is used for operation. The vehicle acquires voice commands through microphone, these commands are converted to text commands through Google cloud. Text commands are sent to Open AI API for jason formatting for our system. Movement commands are executed using DC motors, motor controllers and gyroscope.
 
 
 ## Hardware
@@ -29,17 +24,17 @@ List the key features and functionalities of the project.
 - Power Supply
 
 ## Operating System and Packages
-Bilgisayar uygulaması Windows işletim sistemi için tasarlanmıştır.
+The computer application is designed for the Windows operating system.
 
-Mobil uygulama ise Android işletim sistemine sahip telefonlar için tasarlanmıştır.
+The mobile application is designed for phones with the Android operating system.
 
-Gereklilikler "Installation" bölümünde anlatılmıştır.
+The requirements are explained in the "Installation" section.
 
-## Aplications
-Bilgisayar uygulaması ve mobil uygulama tasarlanmıştır. Bilgisayar uygulaması aracılığıyla aracın başlatılabilmesi sağlanmıştır.
+## Applications
+A computer application and a mobile application have been designed. The vehicle can be started via the computer application.
 
 ## Services
-Uygulamada ve Raspberry Pi'ın içerisindeki kodda bir takım servis sağlayıcılarından faydalanılmıştır.
+Both the application and the code within the Raspberry Pi leverage a number of service providers.
 
 1- Eleven Labs
 2- OpenAI
@@ -50,46 +45,48 @@ Uygulamada ve Raspberry Pi'ın içerisindeki kodda bir takım servis sağlayıc�
 ## Installation
 Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
 
-"Arayuz_Uygulama" klasöründe build ve dist klasörleri bulunmaktadır. Burada bulunan dosyanın indirilmesi ile bilgisayarda çalışacak bir uygulama indirilebilir. Herhangi bir kütüphane indirilmesine gerek yoktur.
+The "Arayuz_Uygulama" folder contains build and dist directories. You can download a ready-to-run application for your computer by downloading the file located here. No additional libraries need to be downloaded for this version.
 
-Benzer bir şekilde "Arayuz_BitirmeProje" klasöründe .exe haline getirilmemiş uygulama çalıştırılabilir. Bu kodun çalıştırılabilmesi için "vlc", "PyQT 5", "paramiko", "pymongo" kütüphanelerinin indirilmiş olması gerekmektedir. 
-
+Similarly, the uncompiled application can be run from the "Arayuz_BitirmeProje" folder. To run this code, you'll need to have the "vlc", "PyQT5", "paramiko", and "pymongo" libraries installed.
 
 
 ```bash
-# Example commands
-git clone https://github.com/username/project-name.git
-cd project-name
+# Example download command
+git clone https://github.com/ELE495-2425Summer/capstoneproject-eski-camoluk.git
+cd Arayuz_BitirmePython
 ```
+
 
 ## Usage
 Provide instructions and examples on how to use the project. Include code snippets or screenshots where applicable.
 
-Aracı çalıştırmak için öncelikle arayüz üzerinden "Başlat" butonuna basılmalıdır. Ardından arayüz sizi bilgilendirdiğinde "Hey Pi Car" denmelidir. Bu cümle algılandığında araç kullanıcıyı dinlemeye başlayacaktır. Kullanıcı araçtan yapmasını beklediği komutları bu noktada söylemelidir.
+To start the vehicle, you must first press the "Başlat" button on the interface. Once the interface notifies you, you should say, "Hey Pi Car." When this phrase is detected, the vehicle will begin listening for your commands. At this point, you should state the commands you want the vehicle to perform.
 
-Örneğin "5 metre ileri git" gibi bir komut verildiğinde. Bu komut bir JSON dosyasında gerekli değişkenlere uygun değerler verilerek oluşturulur. Program JSON'dan aldığı verilerle bilgisayar komutlarını fiziksel hareketlere çevirir ve araç hareket etmeye başlar.
+For example, if you give a command like "5 metre ileri git" this command is converted into a JSON file with appropriate values assigned to the necessary variables. The program then translates the data received from the JSON into computer commands, which are converted into physical movements, and the vehicle begins to move.
 
-Örneğin "Pizza sipariş et" gibi gerçekleştiremeyeceği bir komut verildiğinde ise araç, kullancının istediği komutu yerine getiremeyeceğini söyler ve kullanıcıdan yeni bir komut vermesini bekler.
+If an unexecutable command is given, such as "Pizza siparişi ver" the vehicle will respond by saying it cannot fulfill the requested command and will await a new command from the user.
 
 
 ## Screenshots
 Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here.
 
-Aşağıda bilgisayar uygulamasına ait görseller eklenmiştir.
+Screenshots of the computer application are attached below.
 
 ![Bilgisayar Uygulaması - 1](image.png)
 ![Bilgisayar Uygulaması - 2](image-1.png)
 
-Aynı zamanda bir mobil uygulama tasarımı da yapılmıştır. Aşağıda mobil uygulamaya ait görseller bulunmaktadır.
+A mobile application has also been designed. Screenshots of the mobile application are included below.
 
 ![Mobil Uygulama -1](image-2.png)
 ![Mobil Uygulama -2](image-3.png)
 ![Mobil Uygulama -3](image-4.png)
 ![Mobil Uygulama -4](image-5.png)
+
+
 ## Acknowledgements
 Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
 
-Hazırlayanlar:
+Prepared by:
 Yağız Zengin
 Efe Haylaz
 Yılmaz Duman
