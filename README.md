@@ -29,6 +29,12 @@ List the key features and functionalities of the project.
 ## Installation
 Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
 
+"Arayuz_Uygulama" klasöründe build ve dist klasörleri bulunmaktadır. Burada bulunan dosyanın indirilmesi ile bilgisayarda çalışacak bir uygulama indirilebilir. Herhangi bir kütüphane indirilmesine gerek yoktur.
+
+Benzer bir şekilde "Arayuz_BitirmeProje" klasöründe .exe haline getirilmemiş uygulama çalıştırılabilir. Bu kodun çalıştırılabilmesi için "vlc", "PyQT 5", "paramiko", "pymongo" kütüphanelerinin indirilmiş olması gerekmektedir. 
+
+
+
 ```bash
 # Example commands
 git clone https://github.com/username/project-name.git
@@ -41,6 +47,8 @@ Provide instructions and examples on how to use the project. Include code snippe
 ## Screenshots
 Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here. 
 
+![Bilgisayar Uygulaması - 1](image.png)
+![Bilgisayar Uygulaması - 2](image-1.png)
 ## Acknowledgements
 Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
 
