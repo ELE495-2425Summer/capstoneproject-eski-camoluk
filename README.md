@@ -45,10 +45,19 @@ cd project-name
 Provide instructions and examples on how to use the project. Include code snippets or screenshots where applicable.
 
 ## Screenshots
-Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here. 
+Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here.
+
+Aşağıda bilgisayar uygulamasına ait görseller eklenmiştir.
 
 ![Bilgisayar Uygulaması - 1](image.png)
 ![Bilgisayar Uygulaması - 2](image-1.png)
+
+Aynı zamanda bir mobil uygulama tasarımı da yapılmıştır. Aşağıda mobil uygulamaya ait görseller bulunmaktadır.
+
+![Mobil Uygulama -1](image-2.png)
+![Mobil Uygulama -2](image-3.png)
+![Mobil Uygulama -3](image-4.png)
+![Mobil Uygulama -4](image-5.png)
 ## Acknowledgements
 Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
 
