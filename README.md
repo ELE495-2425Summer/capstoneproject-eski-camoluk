@@ -45,9 +45,7 @@ Both the application and the code within the Raspberry Pi leverage a number of s
 5- Porcupine
 
 ## Installation
-The "Arayuz_Uygulama" folder contains build and dist directories. You can download a ready-to-run application for your computer by downloading the file located here. No additional libraries need to be downloaded for this version.
-
-Similarly, the uncompiled application can be run from the "Arayuz_BitirmeProje" folder. To run this code, you'll need to have the "vlc", "PyQT5", "paramiko", and "pymongo" libraries installed.
+The uncompiled application can be run from the "Arayuz_BitirmeProje" folder. To run this code, you'll need to have the "vlc", "PyQT5", "paramiko", and "pymongo" libraries installed.
 
 Finally you must download rasperry file into your rasperry path that is "./home/grup10/myenv/". And you must download necessary libraries. Also you can download "picar_mobile" file and run the mobile app.
 
@@ -57,7 +55,6 @@ Finally you must download rasperry file into your rasperry path that is "./home/
 git clone https://github.com/ELE495-2425Summer/capstoneproject-eski-camoluk.git
 cd Arayuz_BitirmePython
 
-# Uygulamanın .exe dosyasına dönüşmesi için pyinstaller kullanılmalıdır.
 pip install pyinstaller
 pyinstaller --onefile --noconsole Uygulama_V1.py
 ```
@@ -84,6 +81,11 @@ A mobile application has also been designed. Screenshots of the mobile applicati
 ![Mobil Uygulama -3](image-4.png)
 ![Mobil Uygulama -4](image-5.png)
 
+## Videos
+Some basic test videos are included below.
+
+https://www.youtube.com/shorts/ikAoFiR4mbM
+https://www.youtube.com/shorts/Zg7wgQs0mdg
 
 ## Acknowledgements
 Prepared by:
