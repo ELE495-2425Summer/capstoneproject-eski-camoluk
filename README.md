@@ -9,6 +9,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
+- [Videos](#videos)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -84,7 +85,7 @@ A mobile application has also been designed. Screenshots of the mobile applicati
 ## Videos
 Some basic test videos are included below.
 
-https://www.youtube.com/shorts/ikAoFiR4mbM
+https://www.youtube.com/shorts/ikAoFiR4mbM <br>
 https://www.youtube.com/shorts/Zg7wgQs0mdg
 
 ## Acknowledgements
